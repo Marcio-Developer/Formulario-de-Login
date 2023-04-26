@@ -1,0 +1,140 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans?query=Nunito+Sans');
+
+:root{
+    --font-style: 'Nunito Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #131315;
+    font-family: var(--font-style);
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #242026;
+    box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+    border-radius: 10px;
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box label{
+    position: relative;
+    left: 0;
+    top: -5px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus{
+    color: #8F7CEC;
+    box-shadow: 0 3px 10px #8F7CEC;
+}
+
+.botton-form input{
+    background: transparent;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border: 1px solid #8F7CEC;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.botton-form input:hover{
+    background-color: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 10px #8F7CEC, 0 0 15px #8F7CEC, 0 0 20px #8F7CEC;
+}
+
+#register{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px ;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#register a{
+    margin: -30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#register a:hover{
+    color: #8F7CEC;
+}
+
+@media only screen and (max-width: 600px){
+    .login-box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-box h2{
+        font-size: 18px;
+    }
+
+    .login-box label{
+        font-size: 14px;
+        top: 0;
+        padding: 0;
+    }
+
+    .login-box .user-box input{
+        font-size: 12px;
+    }
+
+    .botton-form input{ 
+        font-size: 12px;
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+
+    #register{
+        margin-right: -50px;
+    }
+}
