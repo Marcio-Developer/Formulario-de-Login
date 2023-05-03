@@ -21,7 +21,7 @@ body{
     padding: 40px;
     transform: translate(-50%, -50%);
     background-color: #242026;
-    box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+    box-shadow: 0 12px 17px rgba(143, 124, 236, 0.7);
     border-radius: 10px;
 }
 
@@ -84,7 +84,7 @@ body{
     background-color: #8F7CEC;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #8F7CEC, 0 0 10px #8F7CEC, 0 0 15px #8F7CEC, 0 0 20px #8F7CEC;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 8px #8F7CEC, 0 0 12px #8F7CEC, 0 0 17px #8F7CEC;
 }
 
 #register{
@@ -109,7 +109,7 @@ body{
 
 @media only screen and (max-width: 600px){
     .login-box{
-        width: 50%;
+        width: 220px;
         display: flex;
         flex-direction: column;
     }
